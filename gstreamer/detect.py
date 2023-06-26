@@ -43,6 +43,9 @@ import svgwrite
 import time
 from tracker import ObjectTracker
 
+from pycoral.pybind._pywrap_coral import SetVerbosity as set_verbosity
+set_verbosity(10)
+
 
 Object = collections.namedtuple('Object', ['id', 'score', 'bbox'])
 
