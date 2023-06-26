@@ -164,7 +164,7 @@ def main():
                         default='raw',
                         choices=['raw', 'h264', 'jpeg'])
     parser.add_argument('--tracker', help='Name of the Object Tracker To be used.',
-                        default='sort',
+                        default=None,
                         choices=[None, 'sort'])
     args = parser.parse_args()
 
